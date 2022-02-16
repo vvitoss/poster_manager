@@ -1,10 +1,19 @@
 package ru.netology.poster_manager;
 
 public class Operations {
+    private int lastIndex = 10;
     private PosterManager[] items = new PosterManager[0];
 
+    public Operations() {
 
-    public void save(PosterManager item) {
+    }
+
+    public Operations(int lastIndex) {
+        this.lastIndex = lastIndex;
+    }
+
+
+    public void  save(PosterManager item) {
         int length = items.length + 1;
         PosterManager[] tmp = new PosterManager[length];
         for (int i = 0; i < items.length; i++) {
@@ -25,16 +34,15 @@ public class Operations {
 
     public PosterManager[] findLast() {
         int resultLength = items.length;
-        int lastIndex = 10;
+        //  int lastIndex = resultLength;
         if (resultLength > lastIndex) {
             resultLength = lastIndex;
-        }
-        //else {
-          //  resultLength = items.length;
-        //}
+        } else {
+         resultLength = items.length;
+       }
 
-        PosterManager[] result = new PosterManager[items.length];
-        for (int i = 0; i < resultLength; i++) {
+        Operations[] result = new Operations[resultLength];
+        for (int i = 0; i < result.length; i++) {
             int index = items.length - i - 1;
             result[i] = items[index];
         }

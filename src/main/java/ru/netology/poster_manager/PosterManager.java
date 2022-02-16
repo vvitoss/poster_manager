@@ -16,52 +16,52 @@ public class PosterManager {
     private String filmGenre;
     private int ticketPrice;
 
-   // public int getId() {
+    // public int getId() {
     //    return id;
-  //  }
+    //  }
 
-  //  public void setId(int id) {
-   //     this.id = id;
-   // }
+    //  public void setId(int id) {
+    //     this.id = id;
+    // }
 
-   // public int getProductId() {
-   //     return productId;
-  //  }
+    // public int getProductId() {
+    //     return productId;
+    //  }
 
-  //  public void setProductId(int productId) {
-   //     this.productId = productId;
-   // }
+    //  public void setProductId(int productId) {
+    //     this.productId = productId;
+    // }
 
-   // public String getFilmName() {
-     //   return filmName;
-   // }
+    // public String getFilmName() {
+    //   return filmName;
+    // }
 
-  //  public void setFilmName(String filmName) {
-   //     this.filmName = filmName;
-  //  }
+    //  public void setFilmName(String filmName) {
+    //     this.filmName = filmName;
+    //  }
 
-  //  public String getFilmGenre() {
-   //     return filmGenre;
-  //  }
+    //  public String getFilmGenre() {
+    //     return filmGenre;
+    //  }
 
-  //  public void setFilmGenre(String filmGenre) {
-   //     this.filmGenre = filmGenre;
-  //  }
+    //  public void setFilmGenre(String filmGenre) {
+    //     this.filmGenre = filmGenre;
+    //  }
 
- //   public int getTicketPrice() {
+    //   public int getTicketPrice() {
     //    return ticketPrice;
- //   }
+    //   }
 
-   // public void setTicketPrice(int ticketPrice) {
-   //     this.ticketPrice = ticketPrice;
-   // }
+    // public void setTicketPrice(int ticketPrice) {
+    //     this.ticketPrice = ticketPrice;
+    // }
 
-  //  public PosterManager(int id, int productId, String filmName, String filmGenre, int ticketPrice) {
-     //   this.id = id;
-    //    this.productId = productId;
-     //   this.filmName = filmName;
-     //   this.filmGenre = filmGenre;
-     //   this.ticketPrice = ticketPrice;
- //   }
+    public PosterManager(int id, int productId, String filmName, String filmGenre, int ticketPrice) {
+        this.id = id;
+        this.productId = productId;
+        this.filmName = filmName;
+        this.filmGenre = filmGenre;
+        this.ticketPrice = ticketPrice;
+    }
 }
 
