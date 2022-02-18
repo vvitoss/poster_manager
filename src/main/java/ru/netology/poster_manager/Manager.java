@@ -13,7 +13,7 @@ public class Manager {
     }
 
 
-    public void  save(BillboardFilm item) {
+    public void save(BillboardFilm item) {
         int length = items.length + 1;
         BillboardFilm[] tmp = new BillboardFilm[length];
         for (int i = 0; i < items.length; i++) {
@@ -38,8 +38,8 @@ public class Manager {
         if (resultLength > lastIndex) {
             resultLength = lastIndex;
         } else {
-         resultLength = items.length;
-       }
+            resultLength = items.length;
+        }
 
         BillboardFilm[] result = new BillboardFilm[resultLength];
         for (int i = 0; i < result.length; i++) {

@@ -56,12 +56,12 @@ public class BillboardFilm {
     //     this.ticketPrice = ticketPrice;
     // }
 
-  //  public PosterManager(int id, int productId, String filmName, String filmGenre, int ticketPrice) {
-     //   this.id = id;
-     //   this.productId = productId;
-     //   this.filmName = filmName;
-     //   this.filmGenre = filmGenre;
-     //   this.ticketPrice = ticketPrice;
-   // }
+    //  public PosterManager(int id, int productId, String filmName, String filmGenre, int ticketPrice) {
+    //   this.id = id;
+    //   this.productId = productId;
+    //   this.filmName = filmName;
+    //   this.filmGenre = filmGenre;
+    //   this.ticketPrice = ticketPrice;
+    // }
 }
 

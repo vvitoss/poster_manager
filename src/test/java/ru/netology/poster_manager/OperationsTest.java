@@ -107,7 +107,7 @@ class OperationsTest {
         managers.save(third);
         managers.save(fourth);
 
-        BillboardFilm[] expected = { fourth, third, second, first};
+        BillboardFilm[] expected = {fourth, third, second, first};
         BillboardFilm[] actual = managers.findLast();
 
         assertArrayEquals(expected, actual);
