@@ -1,21 +1,21 @@
 package ru.netology.poster_manager;
 
-public class Operations {
+public class Manager {
     private int lastIndex = 10;
-    private PosterManager[] items = new PosterManager[0];
+    private BillboardFilm[] items = new BillboardFilm[0];
 
-    public Operations() {
+    public Manager() {
 
     }
 
-    public Operations(int lastIndex) {
+    public Manager(int lastIndex) {
         this.lastIndex = lastIndex;
     }
 
 
-    public void  save(PosterManager item) {
+    public void  save(BillboardFilm item) {
         int length = items.length + 1;
-        PosterManager[] tmp = new PosterManager[length];
+        BillboardFilm[] tmp = new BillboardFilm[length];
         for (int i = 0; i < items.length; i++) {
             tmp[i] = items[i];
         }
@@ -25,14 +25,14 @@ public class Operations {
         items = tmp;
     }
 
-    public PosterManager[] findAll() {
+    public BillboardFilm[] findAll() {
         //  int[] film = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
         //  for (int i = film.length - 1; i <= 0; i--) {
         //   }
         return items;
     }
 
-    public PosterManager[] findLast() {
+    public BillboardFilm[] findLast() {
         int resultLength = items.length;
         //  int lastIndex = resultLength;
         if (resultLength > lastIndex) {
@@ -41,7 +41,7 @@ public class Operations {
          resultLength = items.length;
        }
 
-        PosterManager[] result = new PosterManager[resultLength];
+        BillboardFilm[] result = new BillboardFilm[resultLength];
         for (int i = 0; i < result.length; i++) {
             int index = items.length - i - 1;
             result[i] = items[index];

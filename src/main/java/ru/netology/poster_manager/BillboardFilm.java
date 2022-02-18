@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 
-public class PosterManager {
+public class BillboardFilm {
     public int id;
     private int productId;
     private String filmName;
